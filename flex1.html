@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .container {
+        display: flex;
+        flex-direction:row; 
+      }
+      .container1 {
+        display: flex;
+        flex-direction:row-reverse; 
+      }
+      .container2 {
+        display: flex;
+        flex-direction:column; 
+      }
+      .container3 {
+        display: flex;
+        flex-direction:column-reverse; 
+      }
+      .item {
+        background: cyan;
+        padding: 10px;
+        margin: 10px;
+      }	  
+    </style>
+  </head>
+  <body>	
+    <p>用 flex-direction:row</p>
+	<div class="container">
+	  <div class="item">項目1</div>
+      <div class="item">項目2</div>
+	  <div class="item">項目3</div>
+	</div>	
+    <p>用 flex-direction:row-reverse</p>
+    <div class="container1">
+        <div class="item">項目1</div>
+        <div class="item">項目2</div>
+        <div class="item">項目3</div>
+      </div>
+      <p>用 flex-direction:coiumn</p>	
+      <div class="container2">
+        <div class="item">項目1</div>
+        <div class="item">項目2</div>
+        <div class="item">項目3</div>
+      </div>	
+      <p>用 flex-direction:coiumn-reverse</p>
+      <div class="container3">
+        <div class="item">項目1</div>
+        <div class="item">項目2</div>
+        <div class="item">項目3</div>
+      </div>	
+  </body>
+</html>

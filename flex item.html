@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三欄式 Flex 版面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .flexcontainer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .flexitem {
+            width: 32%;
+            height: 300px;
+            background: lightgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 24px;
+            color: #333;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>頁首</h1></header>
+
+    <div class="flexcontainer">
+        <div class="flexitem"><h2>區塊1</h2></div>
+        <div class="flexitem"><h2>區塊2</h2></div>
+        <div class="flexitem"><h2>區塊3</h2></div>
+    </div>
+
+    <footer><h3>頁尾</h3></footer>
+</body>
+</html>
